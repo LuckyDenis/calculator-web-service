@@ -1,0 +1,8 @@
+.desktop {
+  grid-area: center;
+  display: grid;
+  grid-template-columns: 490px;
+  grid-template-rows: 80px 300px;
+  grid-template-areas:
+      "screen" "numpade";
+}

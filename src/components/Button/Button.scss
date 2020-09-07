@@ -1,0 +1,50 @@
+@import "../../index";
+
+
+.purple-btn {
+  background-color: $purple;
+}
+
+.purple-btn:hover {
+  background-color: $shadow-purple;
+}
+
+
+.white-smoke-btn {
+  background-color: $white-smoke;
+}
+
+.white-smoke-btn:hover {
+  background-color: $shadow-white-smoke;
+}
+
+
+.light-grey-btn {
+  background-color: $light-grey;
+}
+
+
+.light-grey-btn:hover {
+  background-color: $shadow-light-grey;
+}
+
+.double-size-btn {
+  width: 30%;
+  height: 60px;
+}
+
+
+.normal-size-btn {
+  width: 15%;
+  height: 60px;
+}
+
+.btn {
+  border-color: $dark-grey;
+  border-style: solid;
+  border-width: 1px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+}
