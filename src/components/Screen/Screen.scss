@@ -1,11 +1,49 @@
 @import "../../index";
 
+.screen {
+  grid-area: screen;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 2fr;
+  grid-template-areas: "row-1" "row-2";
+}
+
+
+.screen-row {
+  background-color: $white-smoke;
+  border-bottom-width: 0;
+  border-top-width: 0;
+  border-left-color: $dark-grey;
+  border-right-color: $dark-grey;
+  border-left-style: solid;
+  border-right-style: solid;
+  border-left-width: 1px;
+  border-right-width: 1px;
+  border-radius: unset;
+  font-size: 30px;
+  padding-right: 20px;
+  text-align: right;
+  outline: none;
+  text-decoration: none;
+  display: grid;
+}
+
+
+.screen-row::placeholder {
+  color: $dark-grey;
+}
 
 .screen-row-1 {
+  border-top: 1px;
+  border-bottom: 0;
   grid-area: row-1;
+  display: grid;
 }
 
 
 .screen-row-2 {
+  border-top: 0;
+  border-bottom: 0;
   grid-area: row-2;
+  display: grid;
 }
