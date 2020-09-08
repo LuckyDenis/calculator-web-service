@@ -1,8 +1,16 @@
+.calculator {
+  font-family: Arial,sans-serif;
+  text-align: center;
+  text-decoration: none;
+  font-size: 20px;
+}
+
 .desktop {
   grid-area: center;
   display: grid;
-  grid-template-columns: 490px;
-  grid-template-rows: 80px 300px;
+  grid-template-columns: 1fr 7fr 1fr;
+  grid-template-rows: 2fr 5fr;
   grid-template-areas:
-      "screen" "numpade";
+      ". screen ."
+      ". numpade .";
 }

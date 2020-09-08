@@ -2,11 +2,11 @@
 
 
 .purple-btn {
-  background-color: $purple;
+  background-color: $green;
 }
 
 .purple-btn:hover {
-  background-color: $shadow-purple;
+  background-color: $shadow-green;
 }
 
 
@@ -29,13 +29,14 @@
 }
 
 .double-size-btn {
-  width: 30%;
+  width: 140px;
   height: 60px;
+  padding-right: 70px;
 }
 
 
 .normal-size-btn {
-  width: 15%;
+  width: 70px;
   height: 60px;
 }
 
@@ -43,8 +44,5 @@
   border-color: $dark-grey;
   border-style: solid;
   border-width: 1px;
-  text-align: center;
-  text-decoration: none;
   display: inline-block;
-  font-size: 20px;
 }

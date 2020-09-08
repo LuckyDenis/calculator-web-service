@@ -1,12 +1,12 @@
 'use strict';
 import React, { Component } from "react";
-import Row from "../Row/Row";
+import RowButtons from "../RowButtons/RowButtons";
 import "./Numpade.scss";
 
 
 const numpade = [
     {
-        className: "num-row-1 row",
+        className: "num-row-1 num-row",
         specButtons: [
             {
                 className: "light-grey-btn normal-size-btn btn",
@@ -39,7 +39,7 @@ const numpade = [
         ]
     },
     {
-        className: "num-row-2 row",
+        className: "num-row-2 num-row",
         specButtons: [
             {
                 className: "light-grey-btn normal-size-btn btn",
@@ -72,7 +72,7 @@ const numpade = [
         ]
     },
     {
-        className: "num-row-3 row",
+        className: "num-row-3 num-row",
         specButtons: [
             {
                 className: "light-grey-btn normal-size-btn btn",
@@ -105,7 +105,7 @@ const numpade = [
         ]
     },
     {
-        className: "num-row-4 row",
+        className: "num-row-4 num-row",
         specButtons: [
             {
                 className: "light-grey-btn normal-size-btn btn",
@@ -138,7 +138,7 @@ const numpade = [
         ]
     },
     {
-        className: "num-row-5 row",
+        className: "num-row-5 num-row",
         specButtons: [
             {
                 className: "light-grey-btn normal-size-btn btn",
@@ -181,7 +181,7 @@ class Numpade extends Component {
         const rows = []
         template.forEach((rowTemplate, key) => {
             rows.push(
-                <Row d={rowTemplate} key={key}/>
+                <RowButtons d={rowTemplate} key={key}/>
             )
         });
         return rows;

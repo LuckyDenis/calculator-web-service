@@ -1,10 +1,10 @@
 'use strict';
 import React, { Component } from "react";
 import Button from "../Button/Button";
-import "./Row.scss";
+import "./RowButtons.scss";
 
 
-class Row extends Component {
+class RowButtons extends Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -34,4 +34,4 @@ class Row extends Component {
 }
 
 
-export default Row;
+export default RowButtons;
