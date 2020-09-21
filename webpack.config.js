@@ -1,10 +1,10 @@
 const HtmlWebPackPlugin = require("html-webpack-plugin");
-const MiniCssExtractPlugin = require('mini-css-extract-plugin');;
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const path = require("path");
 
 
 const htmlPlugin = new HtmlWebPackPlugin({
-    template: path.resolve(__dirname, './src/html/index.html'),
+    template: path.resolve(__dirname, './src/public/index.html'),
     filename: path.resolve(__dirname, './dist/index.html'),
 })
 
@@ -16,12 +16,22 @@ const miniCssExtractPlugin = new MiniCssExtractPlugin({
 
 
 module.exports = {
-    entry: path.resolve(__dirname, 'src') + '/index.js',
+    devServer: {
+        overlay: true,
+        contentBase: "./dist",
+        hot: true,
+        inline: true,
+        quiet: false,
+        noInfo: true,
+        stats: { colors: true }
+    },
+    entry: [
+        path.resolve(__dirname, 'src') + '/index.js'
+    ],
     output: {
         path: path.resolve(__dirname, 'dist'),
         filename: '[name].bundle.js'
     },
-    devtool: 'inline-source-map',
     module: {
         rules: [
             {
@@ -39,7 +49,8 @@ module.exports = {
                     {
                         loader: 'css-loader',
                         options: { sourceMap: true }
-                    }, {
+                    },
+                    {
                         loader: 'sass-loader',
                         options: { sourceMap: true }
                     }
