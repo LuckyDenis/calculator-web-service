@@ -6,17 +6,20 @@ class Input extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            className: props.d.className,
-            placeholder: props.d.placeholder  || " "
-        }
-    }
-    render() {
+            className: props.date.className,
+            placeholder: props.date.placeholder,
+            value: props.date.value
+        };
+    };
+    render(){
         return (
-            <input
-                className={this.state.className}
-                placeholder={this.state.placeholder} />
+           <input
+               className={this.state.className}
+               placeholder={this.state.placeholder}
+               defaultValue={this.state.value}
+               />
         )
-    }
+    };
 }
 
 

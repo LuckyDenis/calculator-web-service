@@ -1,0 +1,109 @@
+@import "../App/App";
+
+
+.app_desktop__calculator {
+  grid-area: calc;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 4fr 20fr;
+  grid-template-areas: "display" "keyboard";
+}
+
+
+.calculator__row_1 {
+  grid-area: display;
+  display: grid;
+  border-width: 1px;
+  border-style: solid;
+  border-color: $dark-grey;
+  background-color: $white-smoke;
+}
+
+.calculator__row_2 {
+  grid-area: keyboard;
+  display: grid;
+  background-color: $white-smoke;
+  border-width: 1px;
+  border-style: solid;
+  border-color: $shadow-light-grey;
+}
+
+
+.calculator__display_row_1 {
+  /* autoprefixer: off */
+  width: 94%;
+  width: -moz-available;
+  height: 100%;
+  font-size: 16px;
+  border-width: 0;
+  text-align: right;
+  outline: none;
+  text-decoration: none;
+  padding-right: 3%;
+  color: $dark-grey;
+}
+
+.calculator__display_row_2 {
+  /* autoprefixer: off */
+  width: 94%;
+  width: -moz-available;
+  height: auto;
+  font-size: 30px;
+  padding-right: 3%;
+  border-width: 0;
+  text-align: right;
+  outline: none;
+  text-decoration: none;
+  background-color: $white-smoke;
+  color: $shadow-light-grey;
+}
+
+.normal-size-btn {
+  width: 14.28%;
+  height: 100%;
+  text-align: center;
+  padding: 0;
+  border-color: $dark-grey;
+  border-style: solid;
+  border-width: 1px;
+  display: inline-block;
+}
+
+
+.double-size-btn {
+  width: 28.56%;
+  height: 100%;
+  padding: 0 14.28% 0 0;
+  border-color: $dark-grey;
+  border-style: solid;
+  border-width: 1px;
+  display: inline-block;
+}
+
+
+.purple-btn {
+  background-color: $green;
+}
+
+.purple-btn:hover {
+  background-color: $shadow-green;
+}
+
+
+.white-smoke-btn {
+  background-color: $white-smoke;
+}
+
+.white-smoke-btn:hover {
+  background-color: $shadow-white-smoke;
+}
+
+
+.light-grey-btn {
+  background-color: $light-grey;
+}
+
+
+.light-grey-btn:hover {
+  background-color: $shadow-light-grey;
+}
